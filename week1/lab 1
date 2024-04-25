@@ -1,0 +1,1600 @@
+       ***UNIX COMMANDS**
+
+#1) touch: Create a new file or update its timestamp.
+
+rgukt-basar@shailu:~$ touch file1
+
+#2) cat: Concatenate files and print to stdout.
+
+rgukt-basar@shailu:~$ cat>file1
+cat is used to cancatenate files and print to stdout
+rgukt-basar@shailu:~$ touch file2
+
+#3) cp: Copy files
+
+rgukt-basar@shailu:~$ cp file1 file2
+
+#4) mv: Move files or rename files
+
+rgukt-basar@shailu:~$ mv file1 file2
+
+#5) rm: Remove files and directories
+
+rgukt-basar@shailu:~$ rm file1
+
+#6) mkdir: Make a directory
+
+rgukt-basar@shailu:~$ mkdir dir1
+
+rgukt-basar@shailu:~$ ls
+ 78a91b32-7e9c-48f6-b2d9-dbf5431e3cd2.jpeg   f1.txt                                   numbers
+ a.out                                       file1.txt                                Pictures
+ awkfile.txt                                 file2                                   'products dbms'
+ b200658@dbms                                google-chrome-stable_current_amd64.deb   Public
+ c91c2ab4-5a55-471e-94fc-ef283e9567f6.jpeg   grepfile1                                sedfile
+ COMMANDS                                    grepfile1.txt                            sedfile.txt
+ Desktop                                     LINUX                                    snap
+ dir1                                        LINUX_COMMANDS                           Templates
+ Documents                                   month                                    Videos
+ Downloads                                   Music
+
+#7) rmdir: Remove a directory
+
+rgukt-basar@shailu:~$ rmdir dir1
+rgukt-basar@shailu:~$ ls
+ 78a91b32-7e9c-48f6-b2d9-dbf5431e3cd2.jpeg   file1.txt                                Pictures
+ a.out                                       file2                                   'products dbms'
+ awkfile.txt                                 google-chrome-stable_current_amd64.deb   Public
+ b200658@dbms                                grepfile1                                sedfile
+ c91c2ab4-5a55-471e-94fc-ef283e9567f6.jpeg   grepfile1.txt                            sedfile.txt
+ COMMANDS                                    LINUX                                    snap
+ Desktop                                     LINUX_COMMANDS                           Templates
+ Documents                                   month                                    Videos
+ Downloads                                   Music
+ f1.txt                                      numbers
+
+#8) cd: Change directory
+
+rgukt-basar@shailu:~$ cd COMMANDS
+rgukt-basar@shailu:~/COMMANDS$ cd
+
+#9) pwd: Print the present working directory
+
+rgukt-basar@shailu:~$ pwd
+/home/rgukt-basar
+
+#10) ls: List directory contents
+
+rgukt-basar@shailu:~$ ls
+ 78a91b32-7e9c-48f6-b2d9-dbf5431e3cd2.jpeg   file1.txt                                Pictures
+ a.out                                       file2                                   'products dbms'
+ awkfile.txt                                 google-chrome-stable_current_amd64.deb   Public
+ b200658@dbms                                grepfile1                                sedfile
+ c91c2ab4-5a55-471e-94fc-ef283e9567f6.jpeg   grepfile1.txt                            sedfile.txt
+ COMMANDS                                    LINUX                                    snap
+ Desktop                                     LINUX_COMMANDS                           Templates
+ Documents                                   month                                    Videos
+ Downloads                                   Music
+ f1.txt      
+ 
+ #11) which: Locate a command                                numbers
+ 
+rgukt-basar@shailu:~$ which -a cat
+/usr/bin/cat
+/bin/cat
+
+#12) man: Interface for working with the online reference manuals.
+
+rgukt-basar@shailu:~$ man cat
+
+[2]+  Stopped                 man cat
+
+#15) find: Used to search for files and directories as mentioned in the ‘expression’
+
+rgukt-basar@shailu:~$ find file.txt;
+find: ‘file.txt’: No such file or directory
+rgukt-basar@shailu:~$ find COMMAND
+find: ‘COMMAND’: No such file or directory
+rgukt-basar@shailu:~$ find/COMMAND
+bash: find/COMMAND: No such file or directory
+
+#16) du: Estimate disk usage is blocks
+
+rgukt-basar@shailu:~$ du
+4	./.ssh
+4	./.gphoto
+830384	./Videos
+15392	./Pictures/Screenshots
+15396	./Pictures
+19604	./.local/share/Trash/files/(1) WhatsApp_files
+457640	./.local/share/Trash/files
+4	./.local/share/Trash/expunged
+188	./.local/share/Trash/info
+457836	./.local/share/Trash
+4	./.local/share/evolution/mail/trash
+8	./.local/share/evolution/mail
+8	./.local/share/evolution/calendar/system
+4	./.local/share/evolution/calendar/trash
+16	./.local/share/evolution/calendar
+4	./.local/share/evolution/addressbook/system/photos
+92	./.local/share/evolution/addressbook/system
+4	./.local/share/evolution/addressbook/trash
+100	./.local/share/evolution/addressbook
+4	./.local/share/evolution/memos/trash
+8	./.local/share/evolution/memos
+8	./.local/share/evolution/tasks/system
+4	./.local/share/evolution/tasks/trash
+16	./.local/share/evolution/tasks
+152	./.local/share/evolution
+4	./.local/share/backgrounds
+12	./.local/share/keyrings
+4	./.local/share/gstreamer-1.0/presets
+8	./.local/share/gstreamer-1.0
+4	./.local/share/sounds
+4	./.local/share/totem
+4	./.local/share/nautilus/scripts
+356	./.local/share/nautilus/tags
+364	./.local/share/nautilus
+252	./.local/share/shotwell/data
+256	./.local/share/shotwell
+24	./.local/share/rhythmbox
+60	./.local/share/grilo-plugins
+4	./.local/share/applications
+4	./.local/share/flatpak/db
+8	./.local/share/flatpak
+4	./.local/share/gnome-settings-daemon
+8	./.local/share/vlc
+8	./.local/share/gnome-shell
+384	./.local/share/gvfs-metadata
+8	./.local/share/icc
+4	./.local/share/ibus-table
+8	./.local/share/webkitgtk/storage/icphnULij0H7yf6HI3JiCzvAm1Tof2Mq8_PrM3ulPKs/icphnULij0H7yf6HI3JiCzvAm1Tof2Mq8_PrM3ulPKs
+12	./.local/share/webkitgtk/storage/icphnULij0H7yf6HI3JiCzvAm1Tof2Mq8_PrM3ulPKs
+20	./.local/share/webkitgtk/storage
+4	./.local/share/webkitgtk/deviceidhashsalts/1
+8	./.local/share/webkitgtk/deviceidhashsalts
+32	./.local/share/webkitgtk
+92	./.local/share/xorg
+459692	./.local/share
+459696	./.local
+967236	./Documents
+4	./Templates
+8	./.config/gedit
+16	./.config/evolution/sources
+20	./.config/evolution
+4	./.config/update-notifier
+8	./.config/eog
+8	./.config/yelp
+8	./.config/totem
+8	./.config/nautilus
+4	./.config/goa-1.0
+184	./.config/pulse
+12	./.config/gnome-games
+24	./.config/dconf
+4	./.config/gnome-session/saved-session
+8	./.config/gnome-session
+8	./.config/google-chrome/OriginTrials/1.0.0.15/_metadata
+20	./.config/google-chrome/OriginTrials/1.0.0.15
+24	./.config/google-chrome/OriginTrials
+8	./.config/google-chrome/ZxcvbnData/3/_metadata
+1676	./.config/google-chrome/ZxcvbnData/3
+1680	./.config/google-chrome/ZxcvbnData
+8	./.config/google-chrome/FirstPartySetsPreloaded/2024.4.19.0/_metadata
+32	./.config/google-chrome/FirstPartySetsPreloaded/2024.4.19.0
+36	./.config/google-chrome/FirstPartySetsPreloaded
+4	./.config/google-chrome/NativeMessagingHosts
+26924	./.config/google-chrome/Safe Browsing
+8	./.config/google-chrome/FileTypePolicies/63/_metadata
+28	./.config/google-chrome/FileTypePolicies/63
+32	./.config/google-chrome/FileTypePolicies
+128	./.config/google-chrome/Subresource Filter/Indexed Rules/35/9.49.1
+132	./.config/google-chrome/Subresource Filter/Indexed Rules/35
+136	./.config/google-chrome/Subresource Filter/Indexed Rules
+8	./.config/google-chrome/Subresource Filter/Unindexed Rules/9.49.1/_metadata
+120	./.config/google-chrome/Subresource Filter/Unindexed Rules/9.49.1
+124	./.config/google-chrome/Subresource Filter/Unindexed Rules
+264	./.config/google-chrome/Subresource Filter
+8	./.config/google-chrome/OnDeviceHeadSuggestModel/20230916.567854667.14/_metadata
+7908	./.config/google-chrome/OnDeviceHeadSuggestModel/20230916.567854667.14
+7912	./.config/google-chrome/OnDeviceHeadSuggestModel
+300	./.config/google-chrome/ShaderCache
+8	./.config/google-chrome/Crowd Deny/2023.11.29.1201/_metadata
+36	./.config/google-chrome/Crowd Deny/2023.11.29.1201
+40	./.config/google-chrome/Crowd Deny
+28	./.config/google-chrome/AutofillStates/2020.11.2.164946/_metadata
+976	./.config/google-chrome/AutofillStates/2020.11.2.164946
+980	./.config/google-chrome/AutofillStates
+8	./.config/google-chrome/DesktopSharingHub/20220505/_metadata
+324	./.config/google-chrome/DesktopSharingHub/20220505
+328	./.config/google-chrome/DesktopSharingHub
+8	./.config/google-chrome/SSLErrorAssistant/7/_metadata
+24	./.config/google-chrome/SSLErrorAssistant/7
+28	./.config/google-chrome/SSLErrorAssistant
+8	./.config/google-chrome/SafetyTips/3026/_metadata
+168	./.config/google-chrome/SafetyTips/3026
+172	./.config/google-chrome/SafetyTips
+17208	./.config/google-chrome/WidevineCdm/4.10.2710.0/_platform_specific/linux_x64
+17212	./.config/google-chrome/WidevineCdm/4.10.2710.0/_platform_specific
+8	./.config/google-chrome/WidevineCdm/4.10.2710.0/_metadata
+17236	./.config/google-chrome/WidevineCdm/4.10.2710.0
+17244	./.config/google-chrome/WidevineCdm
+8	./.config/google-chrome/CertificateRevocation/8699/_metadata
+48	./.config/google-chrome/CertificateRevocation/8699
+52	./.config/google-chrome/CertificateRevocation
+4	./.config/google-chrome/MEIPreload
+6984	./.config/google-chrome/GrShaderCache
+4100	./.config/google-chrome/BrowserMetrics
+8	./.config/google-chrome/PKIMetadata/937/_metadata
+224	./.config/google-chrome/PKIMetadata/937
+228	./.config/google-chrome/PKIMetadata
+8	./.config/google-chrome/OptimizationHints/443/_metadata
+68	./.config/google-chrome/OptimizationHints/443
+72	./.config/google-chrome/OptimizationHints
+448	./.config/google-chrome/Dictionaries
+17952	./.config/google-chrome/pnacl/0.57.44.2492/_platform_specific/x86_64
+17956	./.config/google-chrome/pnacl/0.57.44.2492/_platform_specific
+8	./.config/google-chrome/pnacl/0.57.44.2492/_metadata
+17976	./.config/google-chrome/pnacl/0.57.44.2492
+17980	./.config/google-chrome/pnacl
+4	./.config/google-chrome/System Profile/AutofillStrikeDatabase
+4	./.config/google-chrome/System Profile/optimization_guide_hint_cache_store
+20	./.config/google-chrome/System Profile/Site Characteristics Database
+20	./.config/google-chrome/System Profile/shared_proto_db/metadata
+40	./.config/google-chrome/System Profile/shared_proto_db
+20	./.config/google-chrome/System Profile/Extension State
+16	./.config/google-chrome/System Profile/Local Storage/leveldb
+20	./.config/google-chrome/System Profile/Local Storage
+4	./.config/google-chrome/System Profile/Download Service/EntryDB
+4	./.config/google-chrome/System Profile/Download Service/Files
+12	./.config/google-chrome/System Profile/Download Service
+4	./.config/google-chrome/System Profile/commerce_subscription_db
+20	./.config/google-chrome/System Profile/Extension Scripts
+20	./.config/google-chrome/System Profile/Extension Rules
+20	./.config/google-chrome/System Profile/Sync Data/LevelDB
+24	./.config/google-chrome/System Profile/Sync Data
+16	./.config/google-chrome/System Profile/GCM Store/Encryption
+20	./.config/google-chrome/System Profile/GCM Store
+4	./.config/google-chrome/System Profile/blob_storage/9b67ab1d-e35b-4d54-a1dc-89921c7cdd4d
+8	./.config/google-chrome/System Profile/blob_storage
+4	./.config/google-chrome/System Profile/optimization_guide_model_metadata_store
+812	./.config/google-chrome/System Profile
+8	./.config/google-chrome/ClientSidePhishing/30.2/_metadata
+3420	./.config/google-chrome/ClientSidePhishing/30.2
+3424	./.config/google-chrome/ClientSidePhishing
+12	./.config/google-chrome/hyphen-data/120.0.6050.0/_metadata
+1852	./.config/google-chrome/hyphen-data/120.0.6050.0
+1856	./.config/google-chrome/hyphen-data
+4	./.config/google-chrome/Crash Reports/attachments
+4	./.config/google-chrome/Crash Reports/new
+4	./.config/google-chrome/Crash Reports/pending
+4	./.config/google-chrome/Crash Reports/completed
+24	./.config/google-chrome/Crash Reports
+68	./.config/google-chrome/Default/optimization_guide_prediction_model_downloads/ab81e6ea-a279-4637-ba21-31b0e3c4daf1
+20	./.config/google-chrome/Default/optimization_guide_prediction_model_downloads/661a9194-2ce6-440e-a585-d7fe29fc614d
+388	./.config/google-chrome/Default/optimization_guide_prediction_model_downloads/fee4d89b-794a-48bd-8f46-095840abdc37
+480	./.config/google-chrome/Default/optimization_guide_prediction_model_downloads
+4	./.config/google-chrome/Default/Feature Engagement Tracker/AvailabilityDB
+4	./.config/google-chrome/Default/Feature Engagement Tracker/EventDB
+12	./.config/google-chrome/Default/Feature Engagement Tracker
+4	./.config/google-chrome/Default/AutofillStrikeDatabase
+24	./.config/google-chrome/Default/Local Extension Settings/ghbmnnjooekpmoecnnnilnnbdlolhkhi
+28	./.config/google-chrome/Default/Local Extension Settings
+4	./.config/google-chrome/Default/Web Applications/Temp
+24	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Icons Monochrome
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Icons Maskable
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons/Maskable
+8	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons/Monochrome/0
+16	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons/Monochrome/1
+28	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons/Monochrome
+8	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons/0
+16	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons/1
+60	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Shortcuts Menu Icons
+40	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml/Icons
+132	./.config/google-chrome/Default/Web Applications/Manifest Resources/agimnkijcaahngcdmfeangaknmldooml
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/fmgjjmmmlfnkbppncabfkddbjimcfncm/Icons Monochrome
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/fmgjjmmmlfnkbppncabfkddbjimcfncm/Icons Maskable
+44	./.config/google-chrome/Default/Web Applications/Manifest Resources/fmgjjmmmlfnkbppncabfkddbjimcfncm/Icons
+56	./.config/google-chrome/Default/Web Applications/Manifest Resources/fmgjjmmmlfnkbppncabfkddbjimcfncm
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/fhihpiojkbmbpdjeoajapmgkhlnakfjf/Icons Monochrome
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/fhihpiojkbmbpdjeoajapmgkhlnakfjf/Icons Maskable
+36	./.config/google-chrome/Default/Web Applications/Manifest Resources/fhihpiojkbmbpdjeoajapmgkhlnakfjf/Icons
+48	./.config/google-chrome/Default/Web Applications/Manifest Resources/fhihpiojkbmbpdjeoajapmgkhlnakfjf
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb/Icons Monochrome
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb/Icons Maskable
+36	./.config/google-chrome/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb/Icons
+48	./.config/google-chrome/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/kefjledonklijopmnomlcbpllchaibag/Icons Monochrome
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/kefjledonklijopmnomlcbpllchaibag/Icons Maskable
+32	./.config/google-chrome/Default/Web Applications/Manifest Resources/kefjledonklijopmnomlcbpllchaibag/Icons
+44	./.config/google-chrome/Default/Web Applications/Manifest Resources/kefjledonklijopmnomlcbpllchaibag
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/aghbiahbpaijignceidepookljebhfak/Icons Monochrome
+4	./.config/google-chrome/Default/Web Applications/Manifest Resources/aghbiahbpaijignceidepookljebhfak/Icons Maskable
+60	./.config/google-chrome/Default/Web Applications/Manifest Resources/aghbiahbpaijignceidepookljebhfak/Icons
+72	./.config/google-chrome/Default/Web Applications/Manifest Resources/aghbiahbpaijignceidepookljebhfak
+404	./.config/google-chrome/Default/Web Applications/Manifest Resources
+412	./.config/google-chrome/Default/Web Applications
+300	./.config/google-chrome/Default/DawnCache
+48	./.config/google-chrome/Default/WebStorage
+4	./.config/google-chrome/Default/optimization_guide_hint_cache_store
+4	./.config/google-chrome/Default/Search Logos
+36	./.config/google-chrome/Default/Site Characteristics Database
+4	./.config/google-chrome/Default/Segmentation Platform/SignalDB
+4	./.config/google-chrome/Default/Segmentation Platform/SegmentInfoDB
+4	./.config/google-chrome/Default/Segmentation Platform/SignalStorageConfigDB
+16	./.config/google-chrome/Default/Segmentation Platform
+4	./.config/google-chrome/Default/coupon_db
+24	./.config/google-chrome/Default/File System/Origins
+16	./.config/google-chrome/Default/File System/000/t/Paths
+24	./.config/google-chrome/Default/File System/000/t
+28	./.config/google-chrome/Default/File System/000
+56	./.config/google-chrome/Default/File System
+52	./.config/google-chrome/Default/shared_proto_db/metadata
+444	./.config/google-chrome/Default/shared_proto_db
+24	./.config/google-chrome/Default/Extension State
+4	./.config/google-chrome/Default/BudgetDatabase
+108	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/images
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/es
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/vi
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/lv
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/et
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/zh_CN
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/ja
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/it
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/nb
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/hr
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/ko
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/sv
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/lt
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/sk
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/pt_PT
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/cs
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/hi
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/pl
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/fil
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/fr
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/fi
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/sr
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/en_GB
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/de
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/el
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/es_419
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/da
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/en
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/hu
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/uk
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/id
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/bg
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/pt_BR
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/sl
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/ro
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/tr
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/ca
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/ru
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/nl
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/zh_TW
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales/th
+324	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_locales
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/css
+24	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/_metadata
+8	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/html
+1268	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0
+1272	./.config/google-chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/es
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/vi
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/lv
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/et
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/zh_CN
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/en_US
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/no
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/si
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/pa
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ja
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/en_CA
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/it
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/hr
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ko
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/hy
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/sv
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/lt
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/sk
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/bn
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/iw
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/pt_PT
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/cs
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/hi
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/pl
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/fil
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/fr
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ms
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/fi
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/sr
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/lo
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ur
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/en_GB
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/de
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/eu
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/mr
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/el
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/es_419
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/da
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/kn
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/zh_HK
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/km
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/en
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/be
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/hu
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/uk
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/fr_CA
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/id
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/bg
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/pt_BR
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/sl
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/is
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/az
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ka
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/zu
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/kk
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/af
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ta
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ro
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/fa
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/tr
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ca
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ru
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/nl
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ml
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ar
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/ne
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/te
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/gu
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/sw
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/cy
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/zh_TW
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/mn
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/th
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/my
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/gl
+8	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales/am
+612	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_locales
+28	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0/_metadata
+748	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi/1.62.0_0
+752	./.config/google-chrome/Default/Extensions/ghbmnnjooekpmoecnnnilnnbdlolhkhi
+2028	./.config/google-chrome/Default/Extensions
+340	./.config/google-chrome/Default/Local Storage/leveldb
+344	./.config/google-chrome/Default/Local Storage
+4	./.config/google-chrome/Default/Download Service/EntryDB
+4	./.config/google-chrome/Default/Download Service/Files
+12	./.config/google-chrome/Default/Download Service
+4	./.config/google-chrome/Default/VideoDecodeStats
+4	./.config/google-chrome/Default/commerce_subscription_db
+20	./.config/google-chrome/Default/Platform Notifications
+24	./.config/google-chrome/Default/Extension Scripts
+24	./.config/google-chrome/Default/Extension Rules
+128	./.config/google-chrome/Default/IndexedDB/https_www.javatpoint.com_0.indexeddb.leveldb
+1792	./.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb
+4	./.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.blob/2/00
+8	./.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.blob/2
+12	./.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.blob
+13512	./.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb
+28	./.config/google-chrome/Default/IndexedDB/https_sync.a-mo.net_0.indexeddb.leveldb
+28	./.config/google-chrome/Default/IndexedDB/https_sikshapath.in_0.indexeddb.leveldb
+32	./.config/google-chrome/Default/IndexedDB/https_prebid.a-mo.net_0.indexeddb.leveldb
+4	./.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.blob/28/00
+8	./.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.blob/28
+12	./.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.blob
+15548	./.config/google-chrome/Default/IndexedDB
+268	./.config/google-chrome/Default/Sessions
+228	./.config/google-chrome/Default/Session Storage
+204	./.config/google-chrome/Default/Sync Data/LevelDB
+208	./.config/google-chrome/Default/Sync Data
+8	./.config/google-chrome/Default/Service Worker/ScriptCache/index-dir
+11420	./.config/google-chrome/Default/Service Worker/ScriptCache
+80	./.config/google-chrome/Default/Service Worker/Database
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88/c8bd9bdd-bfe0-47a9-aa60-5529c3fc0aa6/index-dir
+35288	./.config/google-chrome/Default/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88/c8bd9bdd-bfe0-47a9-aa60-5529c3fc0aa6
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88/c570fb3d-1435-408f-bfae-fc5acadec130/index-dir
+520	./.config/google-chrome/Default/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88/c570fb3d-1435-408f-bfae-fc5acadec130
+35816	./.config/google-chrome/Default/Service Worker/CacheStorage/379f1cbab5b08b6fc9e08681e42d8be311441c88
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2/280ac158-1794-4ab9-8ab1-d7498b957332/index-dir
+16	./.config/google-chrome/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2/280ac158-1794-4ab9-8ab1-d7498b957332
+24	./.config/google-chrome/Default/Service Worker/CacheStorage/76ef9e5953a1ba4578548bb32235240a9f0e0ca2
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2e8b63ac-6934-4a4a-95a4-304caa8d2d0b/index-dir
+16	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/2e8b63ac-6934-4a4a-95a4-304caa8d2d0b
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/adb2286d-981c-40c6-b144-f3fbb8e70143/index-dir
+16	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/adb2286d-981c-40c6-b144-f3fbb8e70143
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/8aea8ab3-2a6c-455d-994e-97476b52ea40/index-dir
+16	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/8aea8ab3-2a6c-455d-994e-97476b52ea40
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33a850c6-0379-4694-9cff-b6f518a4bb63/index-dir
+1736	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/33a850c6-0379-4694-9cff-b6f518a4bb63
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/8cfa0b9c-2201-4590-84aa-b7bd56080482/index-dir
+20	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/8cfa0b9c-2201-4590-84aa-b7bd56080482
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/1cbeefc7-07d4-42b1-b2be-e15fb50b9775/index-dir
+16	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/1cbeefc7-07d4-42b1-b2be-e15fb50b9775
+8	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/d5c3ec7e-23cd-4ee6-9088-40f4c2498c11/index-dir
+32	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544/d5c3ec7e-23cd-4ee6-9088-40f4c2498c11
+1860	./.config/google-chrome/Default/Service Worker/CacheStorage/0bf6ab7f94a21cdc9c1649f884333ec20f40a544
+37704	./.config/google-chrome/Default/Service Worker/CacheStorage
+49208	./.config/google-chrome/Default/Service Worker
+20	./.config/google-chrome/Default/GCM Store/Encryption
+24	./.config/google-chrome/Default/GCM Store
+4	./.config/google-chrome/Default/blob_storage/21f24a08-35b9-4940-9588-b5b66df4649b
+8	./.config/google-chrome/Default/blob_storage
+32	./.config/google-chrome/Default/databases
+300	./.config/google-chrome/Default/GPUCache
+4	./.config/google-chrome/Default/optimization_guide_model_metadata_store
+300	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/DawnCache
+16	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Local Storage/leveldb
+20	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Local Storage
+20	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Session Storage
+300	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/GPUCache
+648	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def
+652	./.config/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda
+656	./.config/google-chrome/Default/Storage/ext
+660	./.config/google-chrome/Default/Storage
+73944	./.config/google-chrome/Default
+8	./.config/google-chrome/UrlParamClassifications/2022.11.1.1/_metadata
+20	./.config/google-chrome/UrlParamClassifications/2022.11.1.1
+24	./.config/google-chrome/UrlParamClassifications
+167152	./.config/google-chrome
+100	./.config/vlc
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/menubar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule/popupmenu
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/StartModule
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/menubar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter/popupmenu
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/swriter
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/menubar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress/popupmenu
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/simpress
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart/images/Bitmaps
+8	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart/images
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart/menubar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart/statusbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart/toolbar
+4	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart/popupmenu
+28	./.config/libreoffice/4/user/config/soffice.cfg/modules/schart
+116	./.config/libreoffice/4/user/config/soffice.cfg/modules
+120	./.config/libreoffice/4/user/config/soffice.cfg
+160	./.config/libreoffice/4/user/config
+4	./.config/libreoffice/4/user/uno_packages/cache/uno_packages
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+8	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+8	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+4	./.config/libreoffice/4/user/uno_packages/cache/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+40	./.config/libreoffice/4/user/uno_packages/cache/registry
+48	./.config/libreoffice/4/user/uno_packages/cache
+52	./.config/libreoffice/4/user/uno_packages
+4	./.config/libreoffice/4/user/autocorr
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/bundled/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+40	./.config/libreoffice/4/user/extensions/bundled/registry
+48	./.config/libreoffice/4/user/extensions/bundled
+4	./.config/libreoffice/4/user/extensions/tmp/extensions
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/tmp/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+40	./.config/libreoffice/4/user/extensions/tmp/registry
+48	./.config/libreoffice/4/user/extensions/tmp
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.executable.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.sfwk.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.script.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.help.PackageRegistryBackend
+8	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.configuration.PackageRegistryBackend
+4	./.config/libreoffice/4/user/extensions/shared/registry/com.sun.star.comp.deployment.bundle.PackageRegistryBackend
+40	./.config/libreoffice/4/user/extensions/shared/registry
+48	./.config/libreoffice/4/user/extensions/shared
+152	./.config/libreoffice/4/user/extensions
+12	./.config/libreoffice/4/user/gallery
+8	./.config/libreoffice/4/user/pack/config
+8	./.config/libreoffice/4/user/pack/wordbook
+8	./.config/libreoffice/4/user/pack/database/biblio
+16	./.config/libreoffice/4/user/pack/database
+8	./.config/libreoffice/4/user/pack/autotext
+16	./.config/libreoffice/4/user/pack/basic/Standard
+28	./.config/libreoffice/4/user/pack/basic
+3016	./.config/libreoffice/4/user/pack
+8	./.config/libreoffice/4/user/wordbook
+4	./.config/libreoffice/4/user/backup
+16	./.config/libreoffice/4/user/store
+4	./.config/libreoffice/4/user/psprint
+128	./.config/libreoffice/4/user/database/biblio
+136	./.config/libreoffice/4/user/database
+8	./.config/libreoffice/4/user/autotext
+16	./.config/libreoffice/4/user/basic/Standard
+28	./.config/libreoffice/4/user/basic
+5720	./.config/libreoffice/4/user
+5724	./.config/libreoffice/4
+5728	./.config/libreoffice
+4	./.config/procps
+8	./.config/gnome-control-center/backgrounds
+12	./.config/gnome-control-center
+28	./.config/ibus/bus
+32	./.config/ibus
+4	./.config/texstudio/completion/user
+20	./.config/texstudio/completion/autogenerated
+28	./.config/texstudio/completion
+4	./.config/texstudio/macro
+4	./.config/texstudio/templates/user
+8	./.config/texstudio/templates
+88	./.config/texstudio
+4	./.config/enchant
+4	./.config/gtk-4.0
+8	./.config/gtk-3.0
+173452	./.config
+4	./.thunderbird/Pending Pings
+8	./.thunderbird/imi8grzu.default
+4	./.thunderbird/4w5n08ad.default-release/security_state
+4	./.thunderbird/4w5n08ad.default-release/crashes/events
+12	./.thunderbird/4w5n08ad.default-release/crashes
+4	./.thunderbird/4w5n08ad.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files
+184	./.thunderbird/4w5n08ad.default-release/storage/permanent/chrome/idb
+192	./.thunderbird/4w5n08ad.default-release/storage/permanent/chrome
+196	./.thunderbird/4w5n08ad.default-release/storage/permanent
+200	./.thunderbird/4w5n08ad.default-release/storage
+20	./.thunderbird/4w5n08ad.default-release/datareporting/archived/2024-04
+28	./.thunderbird/4w5n08ad.default-release/datareporting/archived/2024-03
+52	./.thunderbird/4w5n08ad.default-release/datareporting/archived
+64	./.thunderbird/4w5n08ad.default-release/datareporting
+4	./.thunderbird/4w5n08ad.default-release/minidumps
+14132	./.thunderbird/4w5n08ad.default-release
+4	./.thunderbird/Crash Reports/events
+12	./.thunderbird/Crash Reports
+14168	./.thunderbird
+48	./.java/fonts/11.0.17
+52	./.java/fonts
+56	./.java
+4	./LINUX
+84	./Desktop/DAA
+100704	./Desktop/download
+155656	./Desktop/documents
+1724	./Desktop/IT/week 4
+104	./Desktop/IT/week 1
+6956	./Desktop/IT
+60	./Desktop/desktop/pps/files
+64	./Desktop/desktop/pps/recursion
+96	./Desktop/desktop/pps/functions
+124	./Desktop/desktop/pps/strings
+60	./Desktop/desktop/pps/ponter
+120	./Desktop/desktop/pps/arrays
+920	./Desktop/desktop/pps
+176	./Desktop/desktop/DSA LAB
+144	./Desktop/desktop/java/week 5
+36	./Desktop/desktop/java/week 10
+84	./Desktop/desktop/java/week 9
+68	./Desktop/desktop/java/week 2
+104	./Desktop/desktop/java/week 11
+72	./Desktop/desktop/java/week 3
+84	./Desktop/desktop/java/week 6
+56	./Desktop/desktop/java/week 1
+120	./Desktop/desktop/java/week 7
+16	./Desktop/desktop/java/week 8/p
+20	./Desktop/desktop/java/week 8/calculator
+12	./Desktop/desktop/java/week 8/shap
+24	./Desktop/desktop/java/week 8/pack
+20	./Desktop/desktop/java/week 8/org/shapes
+24	./Desktop/desktop/java/week 8/org
+8	./Desktop/desktop/java/week 8/A
+20	./Desktop/desktop/java/week 8/subpackage
+12	./Desktop/desktop/java/week 8/oops
+20	./Desktop/desktop/java/week 8/dept
+336	./Desktop/desktop/java/week 8
+120	./Desktop/desktop/java/week4
+1616	./Desktop/desktop/java
+76	./Desktop/desktop/labb
+140	./Desktop/desktop/pps manual
+3120	./Desktop/desktop
+820	./Desktop/html/CSS
+8	./Desktop/html/apna college/hellofolder
+72	./Desktop/html/apna college
+768	./Desktop/html/frames/frame2
+808	./Desktop/html/frames/frame1
+1580	./Desktop/html/frames
+5780	./Desktop/html
+275600	./Desktop
+92	./LINUX_COMMANDS
+4	./COMMANDS
+2400	./Downloads/mysql-connector-j_8.3.0-1ubuntu23.10_all (1)
+1477560	./Downloads
+4	./Public
+4	./.mozilla/extensions
+8	./.mozilla
+4	./snap/snap-store/common
+4	./snap/snap-store/959
+12	./snap/snap-store
+24	./snap/snapd-desktop-integration/common/.cache/gio-modules
+72	./snap/snapd-desktop-integration/common/.cache/immodules
+104	./snap/snapd-desktop-integration/common/.cache
+108	./snap/snapd-desktop-integration/common
+4	./snap/snapd-desktop-integration/157/Videos
+4	./snap/snapd-desktop-integration/157/Pictures
+4	./snap/snapd-desktop-integration/157/.local/share/glib-2.0/schemas
+8	./snap/snapd-desktop-integration/157/.local/share/glib-2.0
+4	./snap/snapd-desktop-integration/157/.local/share/icons
+16	./snap/snapd-desktop-integration/157/.local/share
+20	./snap/snapd-desktop-integration/157/.local
+4	./snap/snapd-desktop-integration/157/Documents
+4	./snap/snapd-desktop-integration/157/Templates
+4	./snap/snapd-desktop-integration/157/.config/gtk-2.0
+8	./snap/snapd-desktop-integration/157/.config/fontconfig
+4	./snap/snapd-desktop-integration/157/.config/dconf
+4	./snap/snapd-desktop-integration/157/.config/ibus
+4	./snap/snapd-desktop-integration/157/.config/gtk-3.0
+44	./snap/snapd-desktop-integration/157/.config
+4	./snap/snapd-desktop-integration/157/Desktop
+4	./snap/snapd-desktop-integration/157/Downloads
+4	./snap/snapd-desktop-integration/157/Public
+4	./snap/snapd-desktop-integration/157/Music
+104	./snap/snapd-desktop-integration/157
+4	./snap/snapd-desktop-integration/83/Videos
+4	./snap/snapd-desktop-integration/83/Pictures
+4	./snap/snapd-desktop-integration/83/.local/share/glib-2.0/schemas
+8	./snap/snapd-desktop-integration/83/.local/share/glib-2.0
+4	./snap/snapd-desktop-integration/83/.local/share/icons
+16	./snap/snapd-desktop-integration/83/.local/share
+20	./snap/snapd-desktop-integration/83/.local
+4	./snap/snapd-desktop-integration/83/Documents
+4	./snap/snapd-desktop-integration/83/Templates
+4	./snap/snapd-desktop-integration/83/.config/gtk-2.0
+8	./snap/snapd-desktop-integration/83/.config/fontconfig
+4	./snap/snapd-desktop-integration/83/.config/dconf
+4	./snap/snapd-desktop-integration/83/.config/ibus
+4	./snap/snapd-desktop-integration/83/.config/gtk-3.0
+44	./snap/snapd-desktop-integration/83/.config
+4	./snap/snapd-desktop-integration/83/Desktop
+4	./snap/snapd-desktop-integration/83/Downloads
+4	./snap/snapd-desktop-integration/83/Public
+4	./snap/snapd-desktop-integration/83/Music
+104	./snap/snapd-desktop-integration/83
+320	./snap/snapd-desktop-integration
+4	./snap/firefox/common/.mozilla/extensions
+1360	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/gmp-gmpopenh264/1.8.1.2
+1364	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/gmp-gmpopenh264
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/bookmarkbackups
+2896	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/security_state
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/settings
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/sessionstore-backups
+488	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/extensions
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/crashes/events
+12	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/crashes
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/239
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/196
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/249
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/36
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/241
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/171
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/170
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/127
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/86
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/136
+1416	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/226
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/24
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/149
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/219
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/223
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/220
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/100
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/210
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/95
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/129
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/31
+44	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/85
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/216
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/238
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/130
+56	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/79
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/228
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/255
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/116
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/118
+352	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/190
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/180
+12	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/105
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/195
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/119
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/208
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/114
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/189
+68	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/144
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/106
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/49
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/58
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/97
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/221
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/111
+92	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/184
+52	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/56
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/146
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/198
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/12
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/240
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/37
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/176
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/153
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/250
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/163
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/137
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/254
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/138
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/253
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/205
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/197
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/209
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/17
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/113
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/104
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/132
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/172
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/98
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/64
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/109
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/166
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/225
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/89
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/222
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/233
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/182
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/214
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/2
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/48
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/57
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/5
+144	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/247
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/201
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/173
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/192
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/110
+96	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/0
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/10
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/169
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/27
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/1
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/125
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/16
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/246
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/177
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/140
+60	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/230
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/28
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/47
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/107
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/30
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/227
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/236
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/96
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/174
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/158
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/244
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/245
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/22
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/154
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/80
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/29
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/102
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/7
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/120
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/84
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/52
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/167
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/199
+92	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/134
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/81
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/126
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/191
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/88
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/186
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/50
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/187
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/77
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/18
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/188
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/74
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/181
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/54
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/232
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/76
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/3
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/92
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/133
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/91
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/44
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/70
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/211
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/243
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/14
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/179
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/224
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/11
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/175
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/217
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/25
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/139
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/43
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/83
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/145
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/124
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/101
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/200
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/93
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/123
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/68
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/160
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/35
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/143
+44	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/103
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/115
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/45
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/142
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/185
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/212
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/206
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/131
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/141
+44	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/66
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/87
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/155
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/128
+108	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/67
+40	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/40
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/121
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/168
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/156
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/193
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/148
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/204
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/150
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/183
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/61
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/21
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/90
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/202
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/34
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/32
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/215
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/8
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/26
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/161
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/69
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/147
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/229
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/242
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/53
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/19
+72	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/20
+108	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue/65
+5572	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache/morgue
+5732	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/cache
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/ls
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/idb/3166453069wcaw.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/idb/315746093sw.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/idb/3713173747_s_edmban.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/idb/1119037936ptbc_edte.files
+204	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com/idb
+5980	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++web.whatsapp.com
+36	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.google.co.in/ls
+44	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.google.co.in
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.whatsapp.com/ls
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.whatsapp.com
+64	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.google.com/ls
+72	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.google.com
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.digitalocean.com/ls
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.digitalocean.com
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++tr.snapchat.com^partitionKey=%28https%2Cchegg.com%29/ls
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++tr.snapchat.com^partitionKey=%28https%2Cchegg.com%29
+12	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/cache/morgue/195
+212	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/cache/morgue/84
+228	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/cache/morgue
+300	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/cache
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/ls
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/idb/3972909644splpiac-kmsater.files
+128	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com/idb
+460	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxhint.com
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29/ls
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29/idb/2354812218LCo7g%sCD7a%t5a0bca2s.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29/idb/2171031483YattIedMb.files
+104	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29/idb
+128	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com^partitionKey=%28https%2Cgoogle.com%29
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.chegg.com/cache/morgue
+68	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.chegg.com/cache
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.chegg.com/ls
+92	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.chegg.com
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/cache/morgue/179
+72	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/cache/morgue/43
+84	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/cache/morgue
+172	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/cache
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/ls
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/1610499849yCt7-%iCt7-%rae4s4p9o.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/4217720241yCt7G%cCf7C%oan4f4i9g.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/2232182701SeesravbiacteaWDosrgk.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/932508201yCt7-%pCl7a%yae4r4-9l.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/2616854250LCo7g%sCD7a%taa4b4a9s.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/3272902501PCe7r%sCi7s%tae4n4t9E.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/3211250388sbwdpsunsohintoatciif.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/2171031483YattIedMb.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb/4136718689yCt7-%iCd7b%-ap4r4e9f.files
+472	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com/idb
+668	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.youtube.com
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.tecmint.com/ls
+28	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.tecmint.com
+56	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.coursehero.com/ls
+64	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++www.coursehero.com
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++ads.adthrive.com^partitionKey=%28https%2Clinuxhint.com%29/ls
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++ads.adthrive.com^partitionKey=%28https%2Clinuxhint.com%29
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/12
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/60
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/113
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/104
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/192
+48	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/88
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue/40
+160	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache/morgue
+240	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/cache
+56	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/ls
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/idb/3782417788wconryksb-odxn-uboarc.files
+52	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com/idb
+356	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxize.com
+16	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxgenie.net/ls
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/https+++linuxgenie.net
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/moz-extension+++1a5d414a-6a4c-4652-a4a1-1e44c8f7f09e^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files
+52	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/moz-extension+++1a5d414a-6a4c-4652-a4a1-1e44c8f7f09e^userContextId=4294967295/idb
+60	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default/moz-extension+++1a5d414a-6a4c-4652-a4a1-1e44c8f7f09e^userContextId=4294967295
+8076	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/default
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/temporary
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/2918063365piupsah.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/journals
+808	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/3561288849sdhlie.files
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.files
+10692	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome/idb
+10700	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent/chrome
+10704	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage/permanent
+18916	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/storage
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/glean/events
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/glean/tmp
+24	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/glean/db
+32	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/glean/pending_pings
+68	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/glean
+324	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/archived/2024-01
+104	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/archived/2024-02
+432	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting/archived
+512	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/datareporting
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/browser-extension-data/amazondotcom@search.mozilla.org
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/browser-extension-data
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/saved-telemetry-pings
+4	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/minidumps
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/weave/failed
+8	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/weave/toFetch
+20	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default/weave
+35996	./snap/firefox/common/.mozilla/firefox/ecpzzlci.default
+4	./snap/firefox/common/.mozilla/firefox/Pending Pings
+4	./snap/firefox/common/.mozilla/firefox/Crash Reports/events
+12	./snap/firefox/common/.mozilla/firefox/Crash Reports
+36020	./snap/firefox/common/.mozilla/firefox
+36028	./snap/firefox/common/.mozilla
+88	./snap/firefox/common/.cache/fontconfig
+87312	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/cache2/entries
+4	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/cache2/doomed
+87412	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/cache2
+4	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/personality-provider
+13492	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/safebrowsing/google4
+15468	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/safebrowsing
+13568	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/startupCache
+24	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default/thumbnails
+116504	./snap/firefox/common/.cache/mozilla/firefox/ecpzzlci.default
+116508	./snap/firefox/common/.cache/mozilla/firefox
+116512	./snap/firefox/common/.cache/mozilla
+24	./snap/firefox/common/.cache/gio-modules
+8	./snap/firefox/common/.cache/mesa_shader_cache/36
+8	./snap/firefox/common/.cache/mesa_shader_cache/d5
+8	./snap/firefox/common/.cache/mesa_shader_cache/8a
+8	./snap/firefox/common/.cache/mesa_shader_cache/23
+8	./snap/firefox/common/.cache/mesa_shader_cache/ab
+8	./snap/firefox/common/.cache/mesa_shader_cache/f5
+8	./snap/firefox/common/.cache/mesa_shader_cache/79
+8	./snap/firefox/common/.cache/mesa_shader_cache/e4
+12	./snap/firefox/common/.cache/mesa_shader_cache/d9
+8	./snap/firefox/common/.cache/mesa_shader_cache/df
+8	./snap/firefox/common/.cache/mesa_shader_cache/cb
+8	./snap/firefox/common/.cache/mesa_shader_cache/d2
+8	./snap/firefox/common/.cache/mesa_shader_cache/49
+12	./snap/firefox/common/.cache/mesa_shader_cache/f3
+12	./snap/firefox/common/.cache/mesa_shader_cache/9d
+8	./snap/firefox/common/.cache/mesa_shader_cache/a8
+12	./snap/firefox/common/.cache/mesa_shader_cache/58
+24	./snap/firefox/common/.cache/mesa_shader_cache/5b
+8	./snap/firefox/common/.cache/mesa_shader_cache/c1
+8	./snap/firefox/common/.cache/mesa_shader_cache/37
+8	./snap/firefox/common/.cache/mesa_shader_cache/2d
+8	./snap/firefox/common/.cache/mesa_shader_cache/b3
+12	./snap/firefox/common/.cache/mesa_shader_cache/99
+8	./snap/firefox/common/.cache/mesa_shader_cache/1a
+8	./snap/firefox/common/.cache/mesa_shader_cache/a6
+8	./snap/firefox/common/.cache/mesa_shader_cache/62
+8	./snap/firefox/common/.cache/mesa_shader_cache/7c
+8	./snap/firefox/common/.cache/mesa_shader_cache/73
+8	./snap/firefox/common/.cache/mesa_shader_cache/48
+8	./snap/firefox/common/.cache/mesa_shader_cache/57
+8	./snap/firefox/common/.cache/mesa_shader_cache/a1
+8	./snap/firefox/common/.cache/mesa_shader_cache/b4
+12	./snap/firefox/common/.cache/mesa_shader_cache/b2
+12	./snap/firefox/common/.cache/mesa_shader_cache/7e
+12	./snap/firefox/common/.cache/mesa_shader_cache/f8
+12	./snap/firefox/common/.cache/mesa_shader_cache/2c
+8	./snap/firefox/common/.cache/mesa_shader_cache/6a
+8	./snap/firefox/common/.cache/mesa_shader_cache/28
+8	./snap/firefox/common/.cache/mesa_shader_cache/9c
+8	./snap/firefox/common/.cache/mesa_shader_cache/b5
+16	./snap/firefox/common/.cache/mesa_shader_cache/6e
+8	./snap/firefox/common/.cache/mesa_shader_cache/15
+8	./snap/firefox/common/.cache/mesa_shader_cache/22
+8	./snap/firefox/common/.cache/mesa_shader_cache/b6
+12	./snap/firefox/common/.cache/mesa_shader_cache/81
+8	./snap/firefox/common/.cache/mesa_shader_cache/88
+8	./snap/firefox/common/.cache/mesa_shader_cache/54
+12	./snap/firefox/common/.cache/mesa_shader_cache/ed
+8	./snap/firefox/common/.cache/mesa_shader_cache/91
+8	./snap/firefox/common/.cache/mesa_shader_cache/51
+8	./snap/firefox/common/.cache/mesa_shader_cache/b7
+8	./snap/firefox/common/.cache/mesa_shader_cache/44
+8	./snap/firefox/common/.cache/mesa_shader_cache/ee
+8	./snap/firefox/common/.cache/mesa_shader_cache/14
+16	./snap/firefox/common/.cache/mesa_shader_cache/25
+8	./snap/firefox/common/.cache/mesa_shader_cache/c8
+8	./snap/firefox/common/.cache/mesa_shader_cache/f9
+8	./snap/firefox/common/.cache/mesa_shader_cache/8f
+8	./snap/firefox/common/.cache/mesa_shader_cache/45
+12	./snap/firefox/common/.cache/mesa_shader_cache/41
+8	./snap/firefox/common/.cache/mesa_shader_cache/ca
+8	./snap/firefox/common/.cache/mesa_shader_cache/66
+8	./snap/firefox/common/.cache/mesa_shader_cache/87
+8	./snap/firefox/common/.cache/mesa_shader_cache/d8
+12	./snap/firefox/common/.cache/mesa_shader_cache/eb
+8	./snap/firefox/common/.cache/mesa_shader_cache/e6
+8	./snap/firefox/common/.cache/mesa_shader_cache/d1
+8	./snap/firefox/common/.cache/mesa_shader_cache/0e
+12	./snap/firefox/common/.cache/mesa_shader_cache/d0
+8	./snap/firefox/common/.cache/mesa_shader_cache/0f
+8	./snap/firefox/common/.cache/mesa_shader_cache/90
+12	./snap/firefox/common/.cache/mesa_shader_cache/e0
+8	./snap/firefox/common/.cache/mesa_shader_cache/26
+8	./snap/firefox/common/.cache/mesa_shader_cache/5a
+8	./snap/firefox/common/.cache/mesa_shader_cache/f2
+8	./snap/firefox/common/.cache/mesa_shader_cache/f0
+8	./snap/firefox/common/.cache/mesa_shader_cache/6f
+8	./snap/firefox/common/.cache/mesa_shader_cache/f1
+8	./snap/firefox/common/.cache/mesa_shader_cache/65
+972	./snap/firefox/common/.cache/mesa_shader_cache
+72	./snap/firefox/common/.cache/immodules
+117684	./snap/firefox/common/.cache
+153716	./snap/firefox/common
+4	./snap/firefox/4136/.local/share/glib-2.0/schemas
+8	./snap/firefox/4136/.local/share/glib-2.0
+4	./snap/firefox/4136/.local/share/icons
+20	./snap/firefox/4136/.local/share
+24	./snap/firefox/4136/.local
+4	./snap/firefox/4136/.config/gtk-2.0
+8	./snap/firefox/4136/.config/pulse
+8	./snap/firefox/4136/.config/fontconfig
+4	./snap/firefox/4136/.config/dconf
+4	./snap/firefox/4136/.config/ibus
+4	./snap/firefox/4136/.config/gtk-3.0
+52	./snap/firefox/4136/.config
+84	./snap/firefox/4136
+4	./snap/firefox/3836/.local/share/glib-2.0/schemas
+8	./snap/firefox/3836/.local/share/glib-2.0
+4	./snap/firefox/3836/.local/share/icons
+20	./snap/firefox/3836/.local/share
+24	./snap/firefox/3836/.local
+4	./snap/firefox/3836/.config/gtk-2.0
+8	./snap/firefox/3836/.config/pulse
+8	./snap/firefox/3836/.config/fontconfig
+4	./snap/firefox/3836/.config/dconf
+4	./snap/firefox/3836/.config/ibus
+4	./snap/firefox/3836/.config/gtk-3.0
+52	./snap/firefox/3836/.config
+84	./snap/firefox/3836
+153888	./snap/firefox
+154224	./snap
+8	./b200658@dbms
+16	./.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
+20	./.texlive2021/texmf-var/fonts/pk/ljfour/jknappen
+24	./.texlive2021/texmf-var/fonts/pk/ljfour
+28	./.texlive2021/texmf-var/fonts/pk
+32	./.texlive2021/texmf-var/fonts
+36	./.texlive2021/texmf-var
+40	./.texlive2021
+12	./.gnupg
+4	./Music
+72	./.pki/nssdb
+76	./.pki
+4	./.cache/evolution/mail/trash
+8	./.cache/evolution/mail
+4	./.cache/evolution/calendar/trash
+8	./.cache/evolution/calendar
+4	./.cache/evolution/addressbook/trash
+8	./.cache/evolution/addressbook
+4	./.cache/evolution/memos/trash
+8	./.cache/evolution/memos
+4	./.cache/evolution/sources/trash
+8	./.cache/evolution/sources
+4	./.cache/evolution/tasks/trash
+8	./.cache/evolution/tasks
+52	./.cache/evolution
+392	./.cache/gstreamer-1.0
+4	./.cache/gnome-calculator
+8	./.cache/yelp/CacheStorage
+4	./.cache/yelp/WebKitCache/Version 16/Blobs
+12	./.cache/yelp/WebKitCache/Version 16
+16	./.cache/yelp/WebKitCache
+28	./.cache/yelp
+4	./.cache/thunderbird/imi8grzu.default
+8	./.cache/thunderbird/4w5n08ad.default-release/cache2/trash1908291494
+8	./.cache/thunderbird/4w5n08ad.default-release/cache2/entries
+20	./.cache/thunderbird/4w5n08ad.default-release/cache2
+4	./.cache/thunderbird/4w5n08ad.default-release/safebrowsing/google4
+8	./.cache/thunderbird/4w5n08ad.default-release/safebrowsing
+3524	./.cache/thunderbird/4w5n08ad.default-release/startupCache
+3556	./.cache/thunderbird/4w5n08ad.default-release
+3564	./.cache/thunderbird
+4	./.cache/totem/stream-buffer
+8	./.cache/totem
+8	./.cache/ubuntu-report
+4	./.cache/shotwell/thumbs/thumbs360
+4	./.cache/shotwell/thumbs/thumbs128
+12	./.cache/shotwell/thumbs
+20	./.cache/shotwell
+392	./.cache/gnome-desktop-thumbnailer/gstreamer-1.0
+396	./.cache/gnome-desktop-thumbnailer
+956	./.cache/fontconfig
+8	./.cache/rhythmbox/alternate-toolbar
+12	./.cache/rhythmbox/album-art
+24	./.cache/rhythmbox
+296	./.cache/thumbnails/fail/gnome-thumbnail-factory
+300	./.cache/thumbnails/fail
+13844	./.cache/thumbnails/large
+1408	./.cache/thumbnails/normal
+15556	./.cache/thumbnails
+4	./.cache/google-chrome/System Profile/Cache/Cache_Data
+8	./.cache/google-chrome/System Profile/Cache
+8	./.cache/google-chrome/System Profile/Code Cache/js/index-dir
+16	./.cache/google-chrome/System Profile/Code Cache/js
+8	./.cache/google-chrome/System Profile/Code Cache/wasm/index-dir
+16	./.cache/google-chrome/System Profile/Code Cache/wasm
+36	./.cache/google-chrome/System Profile/Code Cache
+48	./.cache/google-chrome/System Profile
+296	./.cache/google-chrome/Default/Cache/Cache_Data/index-dir
+330368	./.cache/google-chrome/Default/Cache/Cache_Data
+330372	./.cache/google-chrome/Default/Cache
+4	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Cache/Cache_Data
+8	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Cache
+8	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Code Cache/js/index-dir
+16	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Code Cache/js
+8	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Code Cache/wasm/index-dir
+16	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Code Cache/wasm
+36	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def/Code Cache
+48	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda/def
+52	./.cache/google-chrome/Default/Storage/ext/nmmhkkegccagdldgiimedpiccmgmieda
+56	./.cache/google-chrome/Default/Storage/ext
+60	./.cache/google-chrome/Default/Storage
+68	./.cache/google-chrome/Default/Code Cache/js/index-dir
+201704	./.cache/google-chrome/Default/Code Cache/js
+8	./.cache/google-chrome/Default/Code Cache/wasm/index-dir
+16	./.cache/google-chrome/Default/Code Cache/wasm
+201724	./.cache/google-chrome/Default/Code Cache
+532160	./.cache/google-chrome/Default
+532212	./.cache/google-chrome
+28	./.cache/mesa_shader_cache/fe
+32	./.cache/mesa_shader_cache/c3
+36	./.cache/mesa_shader_cache/36
+16	./.cache/mesa_shader_cache/ff
+20	./.cache/mesa_shader_cache/00
+24	./.cache/mesa_shader_cache/3f
+16	./.cache/mesa_shader_cache/86
+24	./.cache/mesa_shader_cache/4a
+36	./.cache/mesa_shader_cache/d5
+24	./.cache/mesa_shader_cache/cf
+20	./.cache/mesa_shader_cache/5f
+28	./.cache/mesa_shader_cache/24
+24	./.cache/mesa_shader_cache/5c
+20	./.cache/mesa_shader_cache/2a
+16	./.cache/mesa_shader_cache/8a
+44	./.cache/mesa_shader_cache/8c
+12	./.cache/mesa_shader_cache/cc
+28	./.cache/mesa_shader_cache/1c
+20	./.cache/mesa_shader_cache/95
+40	./.cache/mesa_shader_cache/23
+36	./.cache/mesa_shader_cache/31
+12	./.cache/mesa_shader_cache/85
+32	./.cache/mesa_shader_cache/cd
+48	./.cache/mesa_shader_cache/ab
+32	./.cache/mesa_shader_cache/f5
+28	./.cache/mesa_shader_cache/79
+32	./.cache/mesa_shader_cache/e4
+28	./.cache/mesa_shader_cache/d9
+40	./.cache/mesa_shader_cache/df
+16	./.cache/mesa_shader_cache/3d
+28	./.cache/mesa_shader_cache/a3
+28	./.cache/mesa_shader_cache/1d
+20	./.cache/mesa_shader_cache/cb
+24	./.cache/mesa_shader_cache/59
+24	./.cache/mesa_shader_cache/94
+36	./.cache/mesa_shader_cache/a4
+8	./.cache/mesa_shader_cache/fd
+24	./.cache/mesa_shader_cache/02
+44	./.cache/mesa_shader_cache/d2
+12	./.cache/mesa_shader_cache/49
+28	./.cache/mesa_shader_cache/f3
+52	./.cache/mesa_shader_cache/f6
+20	./.cache/mesa_shader_cache/63
+48	./.cache/mesa_shader_cache/9d
+12	./.cache/mesa_shader_cache/9a
+28	./.cache/mesa_shader_cache/a8
+28	./.cache/mesa_shader_cache/58
+20	./.cache/mesa_shader_cache/d7
+20	./.cache/mesa_shader_cache/5b
+20	./.cache/mesa_shader_cache/97
+20	./.cache/mesa_shader_cache/56
+32	./.cache/mesa_shader_cache/7a
+24	./.cache/mesa_shader_cache/bd
+36	./.cache/mesa_shader_cache/c1
+28	./.cache/mesa_shader_cache/1b
+24	./.cache/mesa_shader_cache/12
+28	./.cache/mesa_shader_cache/bb
+12	./.cache/mesa_shader_cache/e1
+20	./.cache/mesa_shader_cache/aa
+28	./.cache/mesa_shader_cache/37
+44	./.cache/mesa_shader_cache/60
+24	./.cache/mesa_shader_cache/2d
+28	./.cache/mesa_shader_cache/b3
+40	./.cache/mesa_shader_cache/a9
+24	./.cache/mesa_shader_cache/ec
+44	./.cache/mesa_shader_cache/dd
+28	./.cache/mesa_shader_cache/d3
+16	./.cache/mesa_shader_cache/99
+36	./.cache/mesa_shader_cache/0a
+28	./.cache/mesa_shader_cache/17
+32	./.cache/mesa_shader_cache/75
+32	./.cache/mesa_shader_cache/1a
+20	./.cache/mesa_shader_cache/fb
+24	./.cache/mesa_shader_cache/c6
+40	./.cache/mesa_shader_cache/09
+24	./.cache/mesa_shader_cache/98
+24	./.cache/mesa_shader_cache/a6
+36	./.cache/mesa_shader_cache/64
+24	./.cache/mesa_shader_cache/07
+32	./.cache/mesa_shader_cache/01
+32	./.cache/mesa_shader_cache/62
+16	./.cache/mesa_shader_cache/d4
+28	./.cache/mesa_shader_cache/71
+28	./.cache/mesa_shader_cache/b9
+36	./.cache/mesa_shader_cache/7f
+16	./.cache/mesa_shader_cache/db
+28	./.cache/mesa_shader_cache/7c
+12	./.cache/mesa_shader_cache/89
+36	./.cache/mesa_shader_cache/8e
+20	./.cache/mesa_shader_cache/4f
+20	./.cache/mesa_shader_cache/de
+16	./.cache/mesa_shader_cache/33
+36	./.cache/mesa_shader_cache/73
+8	./.cache/mesa_shader_cache/0b
+52	./.cache/mesa_shader_cache/a5
+40	./.cache/mesa_shader_cache/48
+20	./.cache/mesa_shader_cache/57
+28	./.cache/mesa_shader_cache/b0
+24	./.cache/mesa_shader_cache/10
+24	./.cache/mesa_shader_cache/a1
+28	./.cache/mesa_shader_cache/b4
+16	./.cache/mesa_shader_cache/27
+20	./.cache/mesa_shader_cache/da
+28	./.cache/mesa_shader_cache/c7
+32	./.cache/mesa_shader_cache/b2
+48	./.cache/mesa_shader_cache/39
+40	./.cache/mesa_shader_cache/7e
+36	./.cache/mesa_shader_cache/e2
+36	./.cache/mesa_shader_cache/f8
+20	./.cache/mesa_shader_cache/13
+20	./.cache/mesa_shader_cache/16
+48	./.cache/mesa_shader_cache/1e
+24	./.cache/mesa_shader_cache/06
+28	./.cache/mesa_shader_cache/46
+20	./.cache/mesa_shader_cache/e8
+36	./.cache/mesa_shader_cache/6d
+32	./.cache/mesa_shader_cache/6c
+24	./.cache/mesa_shader_cache/9e
+28	./.cache/mesa_shader_cache/8b
+36	./.cache/mesa_shader_cache/be
+12	./.cache/mesa_shader_cache/2c
+24	./.cache/mesa_shader_cache/ea
+20	./.cache/mesa_shader_cache/6a
+32	./.cache/mesa_shader_cache/28
+28	./.cache/mesa_shader_cache/1f
+48	./.cache/mesa_shader_cache/6b
+28	./.cache/mesa_shader_cache/47
+16	./.cache/mesa_shader_cache/ce
+8	./.cache/mesa_shader_cache/dc
+28	./.cache/mesa_shader_cache/9c
+24	./.cache/mesa_shader_cache/b5
+24	./.cache/mesa_shader_cache/30
+24	./.cache/mesa_shader_cache/96
+28	./.cache/mesa_shader_cache/6e
+28	./.cache/mesa_shader_cache/c4
+16	./.cache/mesa_shader_cache/15
+40	./.cache/mesa_shader_cache/22
+28	./.cache/mesa_shader_cache/80
+24	./.cache/mesa_shader_cache/29
+28	./.cache/mesa_shader_cache/42
+24	./.cache/mesa_shader_cache/84
+28	./.cache/mesa_shader_cache/52
+24	./.cache/mesa_shader_cache/b6
+24	./.cache/mesa_shader_cache/81
+8	./.cache/mesa_shader_cache/88
+24	./.cache/mesa_shader_cache/50
+28	./.cache/mesa_shader_cache/77
+36	./.cache/mesa_shader_cache/18
+28	./.cache/mesa_shader_cache/74
+36	./.cache/mesa_shader_cache/54
+40	./.cache/mesa_shader_cache/c2
+24	./.cache/mesa_shader_cache/8d
+12	./.cache/mesa_shader_cache/76
+12	./.cache/mesa_shader_cache/bc
+32	./.cache/mesa_shader_cache/92
+16	./.cache/mesa_shader_cache/a0
+24	./.cache/mesa_shader_cache/ed
+40	./.cache/mesa_shader_cache/91
+12	./.cache/mesa_shader_cache/51
+24	./.cache/mesa_shader_cache/b7
+24	./.cache/mesa_shader_cache/44
+36	./.cache/mesa_shader_cache/ee
+20	./.cache/mesa_shader_cache/4b
+16	./.cache/mesa_shader_cache/70
+28	./.cache/mesa_shader_cache/d6
+24	./.cache/mesa_shader_cache/c9
+48	./.cache/mesa_shader_cache/14
+20	./.cache/mesa_shader_cache/11
+40	./.cache/mesa_shader_cache/e9
+20	./.cache/mesa_shader_cache/82
+32	./.cache/mesa_shader_cache/af
+44	./.cache/mesa_shader_cache/25
+36	./.cache/mesa_shader_cache/c8
+24	./.cache/mesa_shader_cache/43
+36	./.cache/mesa_shader_cache/fa
+36	./.cache/mesa_shader_cache/83
+12	./.cache/mesa_shader_cache/c0
+36	./.cache/mesa_shader_cache/93
+40	./.cache/mesa_shader_cache/ba
+20	./.cache/mesa_shader_cache/3b
+32	./.cache/mesa_shader_cache/03
+12	./.cache/mesa_shader_cache/68
+24	./.cache/mesa_shader_cache/f9
+24	./.cache/mesa_shader_cache/35
+12	./.cache/mesa_shader_cache/8f
+20	./.cache/mesa_shader_cache/45
+16	./.cache/mesa_shader_cache/c5
+28	./.cache/mesa_shader_cache/04
+16	./.cache/mesa_shader_cache/fc
+24	./.cache/mesa_shader_cache/41
+24	./.cache/mesa_shader_cache/2e
+20	./.cache/mesa_shader_cache/4e
+28	./.cache/mesa_shader_cache/f7
+32	./.cache/mesa_shader_cache/ca
+8	./.cache/mesa_shader_cache/66
+16	./.cache/mesa_shader_cache/87
+32	./.cache/mesa_shader_cache/5e
+32	./.cache/mesa_shader_cache/d8
+24	./.cache/mesa_shader_cache/78
+16	./.cache/mesa_shader_cache/67
+40	./.cache/mesa_shader_cache/40
+28	./.cache/mesa_shader_cache/4c
+20	./.cache/mesa_shader_cache/ef
+16	./.cache/mesa_shader_cache/0d
+20	./.cache/mesa_shader_cache/eb
+20	./.cache/mesa_shader_cache/e6
+28	./.cache/mesa_shader_cache/d1
+20	./.cache/mesa_shader_cache/5d
+24	./.cache/mesa_shader_cache/55
+24	./.cache/mesa_shader_cache/9f
+28	./.cache/mesa_shader_cache/4d
+8	./.cache/mesa_shader_cache/0e
+36	./.cache/mesa_shader_cache/9b
+24	./.cache/mesa_shader_cache/d0
+20	./.cache/mesa_shader_cache/0c
+48	./.cache/mesa_shader_cache/ac
+32	./.cache/mesa_shader_cache/ae
+16	./.cache/mesa_shader_cache/61
+24	./.cache/mesa_shader_cache/7d
+24	./.cache/mesa_shader_cache/21
+32	./.cache/mesa_shader_cache/0f
+28	./.cache/mesa_shader_cache/bf
+12	./.cache/mesa_shader_cache/ad
+40	./.cache/mesa_shader_cache/90
+44	./.cache/mesa_shader_cache/b1
+32	./.cache/mesa_shader_cache/e7
+20	./.cache/mesa_shader_cache/a7
+24	./.cache/mesa_shader_cache/34
+16	./.cache/mesa_shader_cache/e0
+48	./.cache/mesa_shader_cache/32
+36	./.cache/mesa_shader_cache/38
+24	./.cache/mesa_shader_cache/26
+32	./.cache/mesa_shader_cache/72
+40	./.cache/mesa_shader_cache/5a
+28	./.cache/mesa_shader_cache/3c
+20	./.cache/mesa_shader_cache/69
+32	./.cache/mesa_shader_cache/f2
+24	./.cache/mesa_shader_cache/f0
+20	./.cache/mesa_shader_cache/e5
+28	./.cache/mesa_shader_cache/f4
+36	./.cache/mesa_shader_cache/7b
+24	./.cache/mesa_shader_cache/53
+28	./.cache/mesa_shader_cache/19
+8	./.cache/mesa_shader_cache/b8
+28	./.cache/mesa_shader_cache/a2
+32	./.cache/mesa_shader_cache/6f
+16	./.cache/mesa_shader_cache/2f
+24	./.cache/mesa_shader_cache/3a
+28	./.cache/mesa_shader_cache/20
+24	./.cache/mesa_shader_cache/05
+28	./.cache/mesa_shader_cache/3e
+20	./.cache/mesa_shader_cache/2b
+44	./.cache/mesa_shader_cache/e3
+36	./.cache/mesa_shader_cache/f1
+24	./.cache/mesa_shader_cache/65
+8012	./.cache/mesa_shader_cache
+192	./.cache/ibus/bus
+196	./.cache/ibus
+4	./.cache/ibus-table
+20396	./.cache/obexd
+24	./.cache/tracker3/files/errors
+19240	./.cache/tracker3/files
+19244	./.cache/tracker3
+12	./.cache/update-manager-core
+601112	./.cache
+5060244	.
+
+#17) df: Show the number of free blocks for the mounted file system
+
+rgukt-basar@shailu:~$ df 
+Filesystem     1K-blocks     Used Available Use% Mounted on
+tmpfs             791556     2224    789332   1% /run
+/dev/nvme0n1p2 244506940 21487652 210526232  10% /
+tmpfs            3957768        0   3957768   0% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+/dev/nvme0n1p1    523248     5368    517880   2% /boot/efi
+tmpfs             791552      108    791444   1% /run/user/1000
+
+#20) who: Displays the list of users currently logged in
+
+rgukt-basar@shailu:~$ who
+rgukt-basar tty2         2024-04-24 21:49 (tty2)
+
+#21) whoami: Displays the user id of the currently logged-in user.
+
+rgukt-basar@shailu:~$ whoami
+rgukt-basar
+rgukt-basar@shailu:~$ 
+
